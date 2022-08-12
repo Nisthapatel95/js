@@ -9,8 +9,9 @@
 </head>
 
 <body>
-    pop() Method
+   
     <script>
+        // pop() Method
         const fruits = ["Banana", "Orange", "Apple", "Mango"];
         fruits.pop();
        console.log(fruits)
@@ -26,13 +27,58 @@
     //slice()Method
     
     const animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
-    console.log(animals.slice(2));
+    console.log(animals.slice(2,4));
        
     //splice()Method
     const months = ['Jan', 'March', 'April', 'June'];
-    months.splice(1, 0, 'Feb');
+    months.splice(2, 2, 'Feb','May');
     console.log(months)
+
+    //Map()Method
+    const arr1 = [4,36,9,16];
+    const flattened = arr1.flatMap(Math.sqrt);
+    console.log(flattened);
+
+    //Some()Method
+    const array = [1, 2, 3, 4, 5];
+    const age = (element) => element > 18 ;
+    console.log(array.some(age));
+
+    //Reduce()Method
+    const array1 = [1, 22, 3, 40];
+    const initialValue = 0;
+    const sumWithInitial = array1.reduce(
+    (previousValue, currentValue) => previousValue + currentValue,initialValue);
+    console.log(sumWithInitial);
+
+    //filter()Method
+    const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+    const result = words.filter(word => word.length > 6);
+    console.log(result);
+
+    //find()Method
+    const array3 = [5, 12, 8, 130, 44];
+    const found = array3.find(element => element > 50);
+    console.log(found);
+    
+    //Flet()Method
+    const arr4 = [0, 1, 2, [8, 4]];
+    console.log(arr4.flat());
+
+
+    //concat()Method
+    const array6 = ['a', 'b', 'c'];
+    const array7 = ['d', 'e', 'f'];
+    const array8 = array6.concat(array7);
+    console.log(array8);
+    
+    //Date
+    const date = new Date();
+    date.toString() 
+    console.log(date)
+                              
+
     </script>
 </body>
 
-</html>
+</html> 
