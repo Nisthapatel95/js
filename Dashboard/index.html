@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Dashboard Assessment</title>
+</head>
+
+<body>
+    <div class="dis-flex flex-col h-100">
+        <!-- Start : Header -->
+        <header class="header background-light">
+            <div class="container">
+                <nav class="navbar dis-flex justify-content-between align-items-center">
+                    <div class="dis-flex align-items-center">
+                        <!-- Brand logo -->
+                        <a class="navbar-brand px-3" href="#">
+                            <img src="assets/images/brand-logo.png" alt="">
+                        </a>
+                        <a href="#" class="brand-title px-3">Dashboard</a>
+                    </div>
+                    <div class="dis-flex align-items-center">
+                        <span class="fa fa-bell  px-3"></span>
+                        <div class="dropdown">
+                            <button class="btn btn-dropdown">
+                                <figure class="user-icon">
+                                    <img src="images/profile-pic.png" class="image"
+                                        alt="user profile image">
+                                </figure>
+                                <span class="px-3"> John Doe</span>
+                                <span class="fa fa-caret-down"></span>
+                            </button>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- End : Header -->
+        <div class="dis-flex flex-grow">
+            <!-- Start : Sidebar -->
+            <aside class="sidebar background-light">
+                <div>
+                    <h6>General</h6>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="" class="nav-link active">
+                                <span class="fa fa-search "></span>
+                                <span class="nav-text">Search</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">
+                                <span class="fa fa-bell "></span>
+                                <span class="nav-text">Alert</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">
+                                <span class="fa fa-tag "></span>
+                                <span class="nav-text">Tag</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <h6>Others</h6>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="" class="nav-link">
+                                <span class="fa fa-gear "></span>
+                                <span class="nav-text">Setting</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">
+                                <span class="fa fa-address-book "></span>
+                                <span class="nav-text">Tips</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">
+                                <span class="fa fa-trash "></span>
+                                <span class="nav-text">Trash</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">
+                                <span class="fa fa-sign-out "></span>
+                                <span class="nav-text">logout</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+            <!-- End : Sidebar -->
+            <!--  Main -->
+            <main class="main dis-flex flex-col flex-grow ">
+                <div class="dis-flex justify-content-between align-items-center">
+                    <button class="btn button-primary btn-filter"> <span class="fa fa-filter"></span> Filter</button>
+                </div>
+                <div class="flex-grow">
+
+                    <!-- Table section -->
+                    <div class="activity">
+                        <h5>Recent Activity</h5>
+                        <div class="table-wrapper">
+                            <!-- Table header -->
+                            <table>
+                                <thead class="background-light">
+                                    <tr>
+                                        <th class="item">Item </th>
+                                        <th class="date">Date </th>
+                                        <th class="type">Type</th>
+                                        <th class="cost">Est. Cost </th>
+                                        <th class="last">Last </th>
+                                        <th class="list">List </th>
+                                        <th class="auto">Auto</th>
+                                        <th class="buy-now">Buy now</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody id="data">
+                                    <!-- Data -->
+
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+            <!-- End : Main -->
+        </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+
+
+</html>
